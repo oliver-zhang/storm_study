@@ -30,6 +30,9 @@ public class WordCounter extends BaseBasicBolt {
     String name;  
     Map<String, Integer> counters;
     
+    /**
+     * On destory
+     */
     @Override  
     public void cleanup() {  
         System.out.println("-- Word Counter ["+name+"-"+id+"] --");  
